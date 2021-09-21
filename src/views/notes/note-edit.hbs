@@ -7,7 +7,7 @@
       <form action="/notes/note-edit/{{note._id}}?_method=PUT" method="POST">
         <input type="hidden" name="_method" value="PUT" />
         <div class="form-group">
-          <input type="text" name="title" class="form-control" placeholder="Title" value="{{note.title}}" />
+          <input type="text" name="title" class="form-control" placeholder="Title" autocomplete="off" maxlength="40" value="{{note.title}}" />
         </div>
         <div class="form-group mt-2">
           <textarea name="description" class="form-control" placeholder="Description">{{note.description}}</textarea>
